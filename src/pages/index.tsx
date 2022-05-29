@@ -24,7 +24,7 @@ export async function getStaticProps(ctx) {
             likes,
             comments,
             data,
-            revalidate: 3600
+            revalidate: 20
         }
     }
 }
