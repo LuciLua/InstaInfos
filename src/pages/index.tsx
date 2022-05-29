@@ -13,7 +13,7 @@ export async function getStaticProps(ctx) {
     const likes = 10
     const comments = 20
 
-    const url = `https://graph.instagram.com/me/media?access_token=${process.env.MY_TOKEN}&fields=media_url,media_type,caption,media_link`
+    const url = `https://graph.instagram.com/me/media?access_token=${process.env.MY_TOKEN}&fields=media_url,media_type,caption,media_link,permalink`
 
     const resp = await axios.get(url)
     const data = await resp.data

@@ -1,9 +1,45 @@
-.img{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+.post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-bg-secundary);
 
-    position: relative;
-    background-color: rgb(221, 221, 221);
+  max-width: 100%;
+  height: var(--main-height);
+  padding: var(--padding-global);
 
+  .content {
+      position: relative;
+      max-width: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+    .img {
+      width: 300px;
+      height: 300px;
+
+      border-radius: 5px;
+
+      overflow: hidden;
+
+      object-fit: cover;
+
+      margin: 10px;
+
+      position: relative;
+    }
+
+    .infos {
+      max-width: 100%;
+      word-break: break-all;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      line-height: 1.5;
+      color: rgb(49, 49, 49);
+    }
+  }
 }
