@@ -1,0 +1,14 @@
+.profile{
+    min-height: var(--main-height);
+    width: 100%;
+    background: var(--color-bg-primary);
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: var(--padding-global);
+}
